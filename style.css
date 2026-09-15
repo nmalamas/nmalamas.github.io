@@ -1,0 +1,188 @@
+/* ============================================================
+   style.css — Nikolaos Malamas personal academic site
+   ============================================================ */
+
+/* --- Reset & base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+  background: #fafafa;
+}
+
+/* --- Header --- */
+header {
+  background: #1a2a4a;
+  color: #fff;
+  padding: 48px 24px 32px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #a8bcd4;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+}
+
+nav a {
+  color: #c8d8f0;
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* --- Main content --- */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+section {
+  margin-bottom: 56px;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: #1a2a4a;
+  border-bottom: 2px solid #1a2a4a;
+  padding-bottom: 6px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: 'Arial', sans-serif;
+}
+
+/* --- Entries (education, research, projects, achievements) --- */
+.entry {
+  margin-bottom: 28px;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.entry-title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #111;
+}
+
+.entry-date {
+  font-size: 0.875rem;
+  color: #666;
+  white-space: nowrap;
+  font-family: 'Arial', sans-serif;
+}
+
+.entry-sub {
+  font-size: 0.9rem;
+  color: #444;
+  font-style: italic;
+  margin: 2px 0 8px;
+}
+
+.entry p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.entry ul {
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+.entry ul li {
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+/* --- About section --- */
+#about p {
+  margin-bottom: 12px;
+}
+
+/* --- Contact list --- */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-list li {
+  font-size: 1rem;
+}
+
+.contact-list a {
+  color: #1a2a4a;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.contact-list a:hover {
+  border-bottom-color: #1a2a4a;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85rem;
+  color: #888;
+  font-family: 'Arial', sans-serif;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .entry-header {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 32px 16px;
+  }
+}
