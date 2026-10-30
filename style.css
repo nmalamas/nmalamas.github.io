@@ -186,3 +186,17 @@ footer {
     padding: 32px 16px;
   }
 }
+
+.project-figure {
+  margin: 12px 0 0;
+}
+.project-figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.project-figure figcaption {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 6px;
+}
